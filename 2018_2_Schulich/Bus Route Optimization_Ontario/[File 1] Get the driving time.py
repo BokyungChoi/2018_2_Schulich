@@ -2,35 +2,33 @@
 # coding: utf-8
 # Author: Bokyung Choi
 # Date: 2018 11 25
-# Course: OMIS 4000 A
+# Course: __________
 
 # In[1]:
 
 
 import os
 import pandas as pd
-os.getcwd()
-os.chdir(r"C:\Users\최보경\Desktop\2018JUNIOR\02-Models Applications in Operational Research\Model_final")
-xlsx = pd.ExcelFile('BoardingsReport2017.xlsx')
-routeD_df = pd.read_excel(xlsx, 'R00D')
-routeD_df.tail()
+xlsx = pd.ExcelFile('BoardingsReport_____.xlsx')
+route_df = pd.read_excel(xlsx, '_____')
+route_df.tail()
 
 
 # In[2]:
 
 
 #Change those coordinates to string!!!!
-routeD_df['Latitude']=routeD_df['Latitude'].astype(str)
-routeD_df['Longitude']=routeD_df['Longitude'].astype(str)
-routeD_df.head()
-routeD_df.dtypes
+route_df['Latitude']=route_df['Latitude'].astype(str)
+route_df['Longitude']=route_df['Longitude'].astype(str)
+route_df.head()
+route_df.dtypes
 
 
 # In[3]:
 
 
 #Creating tuples for input
-subset=routeD_df[['Latitude','Longitude']]
+subset=route_df[['Latitude','Longitude']]
 stop_coord=[list(x) for x in subset.values]
 stop_coord
 
