@@ -2,7 +2,7 @@
 # coding: utf-8
 # Author: Bokyung Choi
 # Date: 2018 11 25
-# Course: OMIS 4000 A
+# Course: ________
 
 # In[1425]:
 
@@ -13,20 +13,12 @@ import os
 import folium
 
 
-# In[1426]:
-
-
-#Change working directory
-os.getcwd()
-os.chdir(r"C:\Users\최보경\Desktop\2018JUNIOR\02-Models Applications in Operational Research\Model_final")
-
-
 # In[1427]:
 
 
 #Read the excel file
 xlsx=pd.ExcelFile('BoardingsReport2017.xlsx')
-boardings_df=pd.read_excel(xlsx,'R00D')
+boardings_df=pd.read_excel(xlsx,'___')
 boardings_df.tail()
 
 
@@ -63,7 +55,7 @@ new_limit
 
 
 #Start the model
-model=pulp.LpProblem("Chatham - Kent Bus stop Optimization",pulp.LpMinimize)
+model=pulp.LpProblem("Bus stop Optimization",pulp.LpMinimize)
 x={}
 y={}
 X=[]
@@ -282,7 +274,7 @@ for coord in range(0,len(comb_coord)):
                  icon=folium.Icon(color='red'
                                  ,icon='bus',angle=0,prefix='fa')).add_to(sug_map)
    
-sug_map.save('Current Route D.html')
+sug_map.save('Current Route.html')
 sug_map
 
 
@@ -323,11 +315,11 @@ for i in final_answer:
 print(sum(boarding))
 
 print("")
-print("<Total travelling time of revised Route D>")
+print("<Total travelling time of revised Route___>")
 print( pulp.value(model.objective))
       
 print("")
-print("<Selected travelling distance of Route D>")
+print("<Selected travelling distance of Route___>")
 print(keys)
 
 
