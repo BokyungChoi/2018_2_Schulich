@@ -61,7 +61,7 @@ for i in range(0,len(comb_coord)):
     dest = comb_coord[i][1][0],comb_coord[i][1][1]
     dest_coord=','.join(dest)
     
-    API='AIzaSyAEDuKVUDeKyTX-enRoLSH-UN3btVknMjw'
+    API='_____________________'
 
     url = "https://maps.googleapis.com/maps/api/distancematrix/json?origins="+ orig_coord + "&destinations=" + dest_coord + "&mode=driving&traffic_model=best_guess&departure_time=now&language=en-EN&sensor=false&key=" + API
     
