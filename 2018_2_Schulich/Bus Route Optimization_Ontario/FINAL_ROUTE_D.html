@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_1a44fe65a2044b24a7d61fa2dbc8267e {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_1a44fe65a2044b24a7d61fa2dbc8267e" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_1a44fe65a2044b24a7d61fa2dbc8267e = L.map(
+        'map_1a44fe65a2044b24a7d61fa2dbc8267e', {
+        center: [42.334826, -82.21368],
+        zoom: 10,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_a0096f30c42647d08bfc537b1b0baaa1 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_1a44fe65a2044b24a7d61fa2dbc8267e);
+    
+        var marker_0b334e68cfa14f7bbadbc5f7c1d8aab8 = L.marker(
+            [42.40377, -82.18401],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_1a44fe65a2044b24a7d61fa2dbc8267e);
+        
+    
+
+                var icon_9f69b3d83f6a4fd98bed2a5deff3ba01 = L.AwesomeMarkers.icon({
+                    icon: 'bus',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0b334e68cfa14f7bbadbc5f7c1d8aab8.setIcon(icon_9f69b3d83f6a4fd98bed2a5deff3ba01);
+            
+    
+            var popup_2a1f31bee985451ea03586ad85af03ca = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_91f0553ad8f04c56b9e1a0885e73f858 = $(`<div id="html_91f0553ad8f04c56b9e1a0885e73f858" style="width: 100.0%; height: 100.0%;">Terminal</div>`)[0];
+                popup_2a1f31bee985451ea03586ad85af03ca.setContent(html_91f0553ad8f04c56b9e1a0885e73f858);
+            
+
+            marker_0b334e68cfa14f7bbadbc5f7c1d8aab8.bindPopup(popup_2a1f31bee985451ea03586ad85af03ca)
+            ;
+
+            
+        
+    
+        var marker_16c0cc8712064ad7a37edee8ee75e5c3 = L.marker(
+            [42.40422, -82.19487],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_1a44fe65a2044b24a7d61fa2dbc8267e);
+        
+    
+
+                var icon_0ea37c2487ce4b77a4e8c8caeff4da21 = L.AwesomeMarkers.icon({
+                    icon: 'bus',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_16c0cc8712064ad7a37edee8ee75e5c3.setIcon(icon_0ea37c2487ce4b77a4e8c8caeff4da21);
+            
+    
+            var popup_974b4721bc884b4ca10a9545fb0308ad = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b6fa788a1fe144b1ba1ff996004639da = $(`<div id="html_b6fa788a1fe144b1ba1ff996004639da" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+                popup_974b4721bc884b4ca10a9545fb0308ad.setContent(html_b6fa788a1fe144b1ba1ff996004639da);
+            
+
+            marker_16c0cc8712064ad7a37edee8ee75e5c3.bindPopup(popup_974b4721bc884b4ca10a9545fb0308ad)
+            ;
+
+            
+        
+    
+        var marker_4bf2c3304c14465eacb392828f479473 = L.marker(
+            [42.333545, -82.097825],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_1a44fe65a2044b24a7d61fa2dbc8267e);
+        
+    
+
+                var icon_b6ee7ace7991460c8ae190372a665722 = L.AwesomeMarkers.icon({
+                    icon: 'bus',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4bf2c3304c14465eacb392828f479473.setIcon(icon_b6ee7ace7991460c8ae190372a665722);
+            
+    
+            var popup_b24c7d913ca940f8a2bffd52038ed4c9 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4d11d20b91814ee9ad7a4137653995dc = $(`<div id="html_4d11d20b91814ee9ad7a4137653995dc" style="width: 100.0%; height: 100.0%;">Charing Cross</div>`)[0];
+                popup_b24c7d913ca940f8a2bffd52038ed4c9.setContent(html_4d11d20b91814ee9ad7a4137653995dc);
+            
+
+            marker_4bf2c3304c14465eacb392828f479473.bindPopup(popup_b24c7d913ca940f8a2bffd52038ed4c9)
+            ;
+
+            
+        
+    
+        var marker_47fd037cc2fe48e0a749a592021c1d5d = L.marker(
+            [42.27949, -82.03172],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_1a44fe65a2044b24a7d61fa2dbc8267e);
+        
+    
+
+                var icon_b23abef62a9646e1aa9da42f3070bf57 = L.AwesomeMarkers.icon({
+                    icon: 'bus',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_47fd037cc2fe48e0a749a592021c1d5d.setIcon(icon_b23abef62a9646e1aa9da42f3070bf57);
+            
+    
+            var popup_d1a002811c964c5ba2f4bf32ae0eaf70 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_33a7962404b249689af132ebf7438e35 = $(`<div id="html_33a7962404b249689af132ebf7438e35" style="width: 100.0%; height: 100.0%;">Cedar Springs</div>`)[0];
+                popup_d1a002811c964c5ba2f4bf32ae0eaf70.setContent(html_33a7962404b249689af132ebf7438e35);
+            
+
+            marker_47fd037cc2fe48e0a749a592021c1d5d.bindPopup(popup_d1a002811c964c5ba2f4bf32ae0eaf70)
+            ;
+
+            
+        
+    
+        var marker_01268a93b5be4056963d574b7553d2cb = L.marker(
+            [42.24547, -82.10288],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_1a44fe65a2044b24a7d61fa2dbc8267e);
+        
+    
+
+                var icon_0bfd53ebfea545e38255defff5c1a3ce = L.AwesomeMarkers.icon({
+                    icon: 'bus',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_01268a93b5be4056963d574b7553d2cb.setIcon(icon_0bfd53ebfea545e38255defff5c1a3ce);
+            
+    
+            var popup_f1f9e8cd6fe74f22bbe34982f9e99135 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0ab934be484a474ca02a974bfcd54f3c = $(`<div id="html_0ab934be484a474ca02a974bfcd54f3c" style="width: 100.0%; height: 100.0%;">Dealtown</div>`)[0];
+                popup_f1f9e8cd6fe74f22bbe34982f9e99135.setContent(html_0ab934be484a474ca02a974bfcd54f3c);
+            
+
+            marker_01268a93b5be4056963d574b7553d2cb.bindPopup(popup_f1f9e8cd6fe74f22bbe34982f9e99135)
+            ;
+
+            
+        
+    
+        var marker_5b4dcd784dca42e796d5d2d4f182b1c1 = L.marker(
+            [42.27383, -82.18133],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_1a44fe65a2044b24a7d61fa2dbc8267e);
+        
+    
+
+                var icon_b9fc1b2995644c7f8a76882adde52379 = L.AwesomeMarkers.icon({
+                    icon: 'bus',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5b4dcd784dca42e796d5d2d4f182b1c1.setIcon(icon_b9fc1b2995644c7f8a76882adde52379);
+            
+    
+            var popup_80da2fb3085c46cfae3bc13cb9f65e8a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_78580bee8a704826b6e908632683e4ad = $(`<div id="html_78580bee8a704826b6e908632683e4ad" style="width: 100.0%; height: 100.0%;">South Buxton</div>`)[0];
+                popup_80da2fb3085c46cfae3bc13cb9f65e8a.setContent(html_78580bee8a704826b6e908632683e4ad);
+            
+
+            marker_5b4dcd784dca42e796d5d2d4f182b1c1.bindPopup(popup_80da2fb3085c46cfae3bc13cb9f65e8a)
+            ;
+
+            
+        
+    
+        var marker_2a4626606df84618aed8351d1773193a = L.marker(
+            [42.30518, -82.21993],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_1a44fe65a2044b24a7d61fa2dbc8267e);
+        
+    
+
+                var icon_76f535da7cc84d66b902cc5dd85b73df = L.AwesomeMarkers.icon({
+                    icon: 'bus',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2a4626606df84618aed8351d1773193a.setIcon(icon_76f535da7cc84d66b902cc5dd85b73df);
+            
+    
+            var popup_579f84d720d345098a565a448df1d0ab = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_06c3104b29f046638eaf5e56e470251b = $(`<div id="html_06c3104b29f046638eaf5e56e470251b" style="width: 100.0%; height: 100.0%;">North Buxton</div>`)[0];
+                popup_579f84d720d345098a565a448df1d0ab.setContent(html_06c3104b29f046638eaf5e56e470251b);
+            
+
+            marker_2a4626606df84618aed8351d1773193a.bindPopup(popup_579f84d720d345098a565a448df1d0ab)
+            ;
+
+            
+        
+    
+        var marker_4a6da9a2b79944689ff34602f126b22e = L.marker(
+            [42.24096, -82.23278],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_1a44fe65a2044b24a7d61fa2dbc8267e);
+        
+    
+
+                var icon_a9c64fc0650a4b7d88c8f26f812e9568 = L.AwesomeMarkers.icon({
+                    icon: 'bus',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4a6da9a2b79944689ff34602f126b22e.setIcon(icon_a9c64fc0650a4b7d88c8f26f812e9568);
+            
+    
+            var popup_d853c083072a4cc88add12002c614da6 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9d358edc441645a5a3451dd9e3b3e87c = $(`<div id="html_9d358edc441645a5a3451dd9e3b3e87c" style="width: 100.0%; height: 100.0%;">Merlin</div>`)[0];
+                popup_d853c083072a4cc88add12002c614da6.setContent(html_9d358edc441645a5a3451dd9e3b3e87c);
+            
+
+            marker_4a6da9a2b79944689ff34602f126b22e.bindPopup(popup_d853c083072a4cc88add12002c614da6)
+            ;
+
+            
+        
+    
+        var marker_c7910b78091346088f557217b0453ed8 = L.marker(
+            [42.24942, -82.43288],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_1a44fe65a2044b24a7d61fa2dbc8267e);
+        
+    
+
+                var icon_d56d42c602f242b9a8a7d3d4cd4660a2 = L.AwesomeMarkers.icon({
+                    icon: 'bus',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c7910b78091346088f557217b0453ed8.setIcon(icon_d56d42c602f242b9a8a7d3d4cd4660a2);
+            
+    
+            var popup_a8d62e20b3d94d22a877784f8d0cb189 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8e229e105f73493da168dbcb734a1160 = $(`<div id="html_8e229e105f73493da168dbcb734a1160" style="width: 100.0%; height: 100.0%;">Homesteads Drive</div>`)[0];
+                popup_a8d62e20b3d94d22a877784f8d0cb189.setContent(html_8e229e105f73493da168dbcb734a1160);
+            
+
+            marker_c7910b78091346088f557217b0453ed8.bindPopup(popup_a8d62e20b3d94d22a877784f8d0cb189)
+            ;
+
+            
+        
+    
+        var marker_e7ec6cbdb2614acdbab67c84ae389841 = L.marker(
+            [42.25335, -82.43264],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_1a44fe65a2044b24a7d61fa2dbc8267e);
+        
+    
+
+                var icon_38abac719a004629b0eff58df8235b43 = L.AwesomeMarkers.icon({
+                    icon: 'bus',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e7ec6cbdb2614acdbab67c84ae389841.setIcon(icon_38abac719a004629b0eff58df8235b43);
+            
+    
+            var popup_2f136a5e8eae4c3181f6991e83ee8b79 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0dfbfa6c44f74feeb71c688710873eaf = $(`<div id="html_0dfbfa6c44f74feeb71c688710873eaf" style="width: 100.0%; height: 100.0%;">Tilbury High School</div>`)[0];
+                popup_2f136a5e8eae4c3181f6991e83ee8b79.setContent(html_0dfbfa6c44f74feeb71c688710873eaf);
+            
+
+            marker_e7ec6cbdb2614acdbab67c84ae389841.bindPopup(popup_2f136a5e8eae4c3181f6991e83ee8b79)
+            ;
+
+            
+        
+    
+        var marker_8be5ac214f424db5978dbaa2bd3e2866 = L.marker(
+            [42.25423, -82.43751],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_1a44fe65a2044b24a7d61fa2dbc8267e);
+        
+    
+
+                var icon_8e71f46f9658470791c90a6ba9686a71 = L.AwesomeMarkers.icon({
+                    icon: 'bus',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8be5ac214f424db5978dbaa2bd3e2866.setIcon(icon_8e71f46f9658470791c90a6ba9686a71);
+            
+    
+            var popup_53c2138cd8a44fb197243892e5cad34a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_21d98ea9ec1e40beb193528b144a7bbe = $(`<div id="html_21d98ea9ec1e40beb193528b144a7bbe" style="width: 100.0%; height: 100.0%;">Tilbury Arena</div>`)[0];
+                popup_53c2138cd8a44fb197243892e5cad34a.setContent(html_21d98ea9ec1e40beb193528b144a7bbe);
+            
+
+            marker_8be5ac214f424db5978dbaa2bd3e2866.bindPopup(popup_53c2138cd8a44fb197243892e5cad34a)
+            ;
+
+            
+        
+    
+        var marker_e2084d8377b44addab9d67b82cf8b779 = L.marker(
+            [42.25622, -82.43235],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_1a44fe65a2044b24a7d61fa2dbc8267e);
+        
+    
+
+                var icon_9636f2217a924a3386a50083f6eb9f18 = L.AwesomeMarkers.icon({
+                    icon: 'bus',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e2084d8377b44addab9d67b82cf8b779.setIcon(icon_9636f2217a924a3386a50083f6eb9f18);
+            
+    
+            var popup_41aec2e996434f7287fd23ca8b885d33 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_00a170fbc3084aadb96fe039c27023b4 = $(`<div id="html_00a170fbc3084aadb96fe039c27023b4" style="width: 100.0%; height: 100.0%;">Stewert Avenue</div>`)[0];
+                popup_41aec2e996434f7287fd23ca8b885d33.setContent(html_00a170fbc3084aadb96fe039c27023b4);
+            
+
+            marker_e2084d8377b44addab9d67b82cf8b779.bindPopup(popup_41aec2e996434f7287fd23ca8b885d33)
+            ;
+
+            
+        
+    
+        var marker_c34985792911492faf3650aefe2611be = L.marker(
+            [42.25802, -82.43223],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_1a44fe65a2044b24a7d61fa2dbc8267e);
+        
+    
+
+                var icon_545da8f1a8804516ae61fa858adc4d70 = L.AwesomeMarkers.icon({
+                    icon: 'bus',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c34985792911492faf3650aefe2611be.setIcon(icon_545da8f1a8804516ae61fa858adc4d70);
+            
+    
+            var popup_983ffccfcdd34bedb8e9d27750591a3a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d10fd66e56cf4c29b64f9039a116e7f6 = $(`<div id="html_d10fd66e56cf4c29b64f9039a116e7f6" style="width: 100.0%; height: 100.0%;">Canal Street</div>`)[0];
+                popup_983ffccfcdd34bedb8e9d27750591a3a.setContent(html_d10fd66e56cf4c29b64f9039a116e7f6);
+            
+
+            marker_c34985792911492faf3650aefe2611be.bindPopup(popup_983ffccfcdd34bedb8e9d27750591a3a)
+            ;
+
+            
+        
+    
+        var marker_0dd36efdc4474f9eba7aae9050151adb = L.marker(
+            [42.26107, -82.43206],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_1a44fe65a2044b24a7d61fa2dbc8267e);
+        
+    
+
+                var icon_5399b8d56ba34613bf2789608cdbceee = L.AwesomeMarkers.icon({
+                    icon: 'bus',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0dd36efdc4474f9eba7aae9050151adb.setIcon(icon_5399b8d56ba34613bf2789608cdbceee);
+            
+    
+            var popup_d124cae563a1412494425da20900205f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_436305676811406bb99adb3dc5b8914c = $(`<div id="html_436305676811406bb99adb3dc5b8914c" style="width: 100.0%; height: 100.0%;">Superior Street</div>`)[0];
+                popup_d124cae563a1412494425da20900205f.setContent(html_436305676811406bb99adb3dc5b8914c);
+            
+
+            marker_0dd36efdc4474f9eba7aae9050151adb.bindPopup(popup_d124cae563a1412494425da20900205f)
+            ;
+
+            
+        
+    
+        var marker_0519f77ca75e418ebd461659e8cc54aa = L.marker(
+            [42.263298, -82.436767],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_1a44fe65a2044b24a7d61fa2dbc8267e);
+        
+    
+
+                var icon_268a0fdc90c1488796d4486e207de78f = L.AwesomeMarkers.icon({
+                    icon: 'bus',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0519f77ca75e418ebd461659e8cc54aa.setIcon(icon_268a0fdc90c1488796d4486e207de78f);
+            
+    
+            var popup_2c549cdc4fe04fd0b887fdc8fa9764f1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6931e7b051164d80bf0f32c96fc93049 = $(`<div id="html_6931e7b051164d80bf0f32c96fc93049" style="width: 100.0%; height: 100.0%;">Family Health Team</div>`)[0];
+                popup_2c549cdc4fe04fd0b887fdc8fa9764f1.setContent(html_6931e7b051164d80bf0f32c96fc93049);
+            
+
+            marker_0519f77ca75e418ebd461659e8cc54aa.bindPopup(popup_2c549cdc4fe04fd0b887fdc8fa9764f1)
+            ;
+
+            
+        
+    
+        var marker_0722a38860c147c5a5a987338bce0919 = L.marker(
+            [42.262881, -82.436405],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_1a44fe65a2044b24a7d61fa2dbc8267e);
+        
+    
+
+                var icon_7477f376d6f54550a157ee2839b5dd7a = L.AwesomeMarkers.icon({
+                    icon: 'bus',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0722a38860c147c5a5a987338bce0919.setIcon(icon_7477f376d6f54550a157ee2839b5dd7a);
+            
+    
+            var popup_098e5ce6a2514583883855fa94e8694c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6a29320fbedb4f95a081cf40d914a8e7 = $(`<div id="html_6a29320fbedb4f95a081cf40d914a8e7" style="width: 100.0%; height: 100.0%;">Lyon Street</div>`)[0];
+                popup_098e5ce6a2514583883855fa94e8694c.setContent(html_6a29320fbedb4f95a081cf40d914a8e7);
+            
+
+            marker_0722a38860c147c5a5a987338bce0919.bindPopup(popup_098e5ce6a2514583883855fa94e8694c)
+            ;
+
+            
+        
+    
+        var marker_6ef9e633c00f44eea627225e9fd3e477 = L.marker(
+            [42.26342, -82.429899],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_1a44fe65a2044b24a7d61fa2dbc8267e);
+        
+    
+
+                var icon_be577b1c180542d7bc05f7eae3ec2199 = L.AwesomeMarkers.icon({
+                    icon: 'bus',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6ef9e633c00f44eea627225e9fd3e477.setIcon(icon_be577b1c180542d7bc05f7eae3ec2199);
+            
+    
+            var popup_96b2f661675441eaa46a94ad87dbc476 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a6f2406a818c4b99a1ffed0b42102211 = $(`<div id="html_a6f2406a818c4b99a1ffed0b42102211" style="width: 100.0%; height: 100.0%;">Bond Street</div>`)[0];
+                popup_96b2f661675441eaa46a94ad87dbc476.setContent(html_a6f2406a818c4b99a1ffed0b42102211);
+            
+
+            marker_6ef9e633c00f44eea627225e9fd3e477.bindPopup(popup_96b2f661675441eaa46a94ad87dbc476)
+            ;
+
+            
+        
+    
+        var marker_0fe36978863b4695a93294caa61fe81d = L.marker(
+            [42.399031, -82.194932],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_1a44fe65a2044b24a7d61fa2dbc8267e);
+        
+    
+
+                var icon_021dcebbcc0f4f4a84d19a27f63153fb = L.AwesomeMarkers.icon({
+                    icon: 'bus',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0fe36978863b4695a93294caa61fe81d.setIcon(icon_021dcebbcc0f4f4a84d19a27f63153fb);
+            
+    
+            var popup_ec96c32d630845fabc6078d202a2b542 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0cf77bbe19b247a98c8845a54dccfa7c = $(`<div id="html_0cf77bbe19b247a98c8845a54dccfa7c" style="width: 100.0%; height: 100.0%;">Riverview Gardens</div>`)[0];
+                popup_ec96c32d630845fabc6078d202a2b542.setContent(html_0cf77bbe19b247a98c8845a54dccfa7c);
+            
+
+            marker_0fe36978863b4695a93294caa61fe81d.bindPopup(popup_ec96c32d630845fabc6078d202a2b542)
+            ;
+
+            
+        
+    
+        var marker_274f105d2534409d83d48146424d9fcb = L.marker(
+            [42.40377, -82.18401],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_1a44fe65a2044b24a7d61fa2dbc8267e);
+        
+    
+
+                var icon_85cd043371d74fc2914e727b44797bb9 = L.AwesomeMarkers.icon({
+                    icon: 'bus',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_274f105d2534409d83d48146424d9fcb.setIcon(icon_85cd043371d74fc2914e727b44797bb9);
+            
+    
+            var popup_57a35766edbe41e3832582e45f6bb9b5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_80b56f0dc5084538b0bdd013f873979e = $(`<div id="html_80b56f0dc5084538b0bdd013f873979e" style="width: 100.0%; height: 100.0%;">Terminal</div>`)[0];
+                popup_57a35766edbe41e3832582e45f6bb9b5.setContent(html_80b56f0dc5084538b0bdd013f873979e);
+            
+
+            marker_274f105d2534409d83d48146424d9fcb.bindPopup(popup_57a35766edbe41e3832582e45f6bb9b5)
+            ;
+
+            
+        
+    
+        var marker_0d252df589a046c4a06c77b0767dc2cd = L.marker(
+            [42.25423, -82.43751],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_1a44fe65a2044b24a7d61fa2dbc8267e);
+        
+    
+
+                var icon_4fcea0b64bec41cda37fa978c807a3d3 = L.AwesomeMarkers.icon({
+                    icon: 'bus',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0d252df589a046c4a06c77b0767dc2cd.setIcon(icon_4fcea0b64bec41cda37fa978c807a3d3);
+            
+    
+            var popup_2257b8c4c7244ee2bb915d9f021bff23 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_eb922a3c2dc0419488d19f73fffe26c9 = $(`<div id="html_eb922a3c2dc0419488d19f73fffe26c9" style="width: 100.0%; height: 100.0%;">Tilbury Arena</div>`)[0];
+                popup_2257b8c4c7244ee2bb915d9f021bff23.setContent(html_eb922a3c2dc0419488d19f73fffe26c9);
+            
+
+            marker_0d252df589a046c4a06c77b0767dc2cd.bindPopup(popup_2257b8c4c7244ee2bb915d9f021bff23)
+            ;
+
+            
+        
+    
+        var marker_c94f541868334e6582bd79685a4e4184 = L.marker(
+            [42.25622, -82.43235],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_1a44fe65a2044b24a7d61fa2dbc8267e);
+        
+    
+
+                var icon_4452b291eb9a4e429f330fea757a710a = L.AwesomeMarkers.icon({
+                    icon: 'bus',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c94f541868334e6582bd79685a4e4184.setIcon(icon_4452b291eb9a4e429f330fea757a710a);
+            
+    
+            var popup_d6121b587c8d427babfe7e4f32e80f0a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_dc18bce7a94544f282c71e89bddb1c56 = $(`<div id="html_dc18bce7a94544f282c71e89bddb1c56" style="width: 100.0%; height: 100.0%;">Stewert Avenue</div>`)[0];
+                popup_d6121b587c8d427babfe7e4f32e80f0a.setContent(html_dc18bce7a94544f282c71e89bddb1c56);
+            
+
+            marker_c94f541868334e6582bd79685a4e4184.bindPopup(popup_d6121b587c8d427babfe7e4f32e80f0a)
+            ;
+
+            
+        
+    
+        var marker_e55ad64b2f264610a40a1dc119313bee = L.marker(
+            [42.26342, -82.429899],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_1a44fe65a2044b24a7d61fa2dbc8267e);
+        
+    
+
+                var icon_08b3bb414dea4df4b5c8576216c23ca9 = L.AwesomeMarkers.icon({
+                    icon: 'bus',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e55ad64b2f264610a40a1dc119313bee.setIcon(icon_08b3bb414dea4df4b5c8576216c23ca9);
+            
+    
+            var popup_e4b73c9b834d47a0b1578668e404fab2 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d52889547f6446df986c55977506906a = $(`<div id="html_d52889547f6446df986c55977506906a" style="width: 100.0%; height: 100.0%;">Bond Street</div>`)[0];
+                popup_e4b73c9b834d47a0b1578668e404fab2.setContent(html_d52889547f6446df986c55977506906a);
+            
+
+            marker_e55ad64b2f264610a40a1dc119313bee.bindPopup(popup_e4b73c9b834d47a0b1578668e404fab2)
+            ;
+
+            
+        
+    
+        var marker_78cde2b5f54249b4b37399edda32abc3 = L.marker(
+            [42.399031, -82.194932],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_1a44fe65a2044b24a7d61fa2dbc8267e);
+        
+    
+
+                var icon_e5480f99d77f4e3cb9eba47c45a8504e = L.AwesomeMarkers.icon({
+                    icon: 'bus',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_78cde2b5f54249b4b37399edda32abc3.setIcon(icon_e5480f99d77f4e3cb9eba47c45a8504e);
+            
+    
+            var popup_e373fb8da1074a8e9a98143de0afd358 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ae52a015881344e79e28352e4e263b47 = $(`<div id="html_ae52a015881344e79e28352e4e263b47" style="width: 100.0%; height: 100.0%;">Riverview Gardens</div>`)[0];
+                popup_e373fb8da1074a8e9a98143de0afd358.setContent(html_ae52a015881344e79e28352e4e263b47);
+            
+
+            marker_78cde2b5f54249b4b37399edda32abc3.bindPopup(popup_e373fb8da1074a8e9a98143de0afd358)
+            ;
+
+            
+        
+    
+        var marker_2e9181b49fee46e1a7e7a367fb13cc67 = L.marker(
+            [42.40422, -82.19487],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_1a44fe65a2044b24a7d61fa2dbc8267e);
+        
+    
+
+                var icon_40c50500388b4b709589fd3eaf820409 = L.AwesomeMarkers.icon({
+                    icon: 'bus',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2e9181b49fee46e1a7e7a367fb13cc67.setIcon(icon_40c50500388b4b709589fd3eaf820409);
+            
+    
+            var popup_6099cebd6ba24ff895f5a2e450167fa5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_06556e9bf8864db6aa2853f17b955c47 = $(`<div id="html_06556e9bf8864db6aa2853f17b955c47" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+                popup_6099cebd6ba24ff895f5a2e450167fa5.setContent(html_06556e9bf8864db6aa2853f17b955c47);
+            
+
+            marker_2e9181b49fee46e1a7e7a367fb13cc67.bindPopup(popup_6099cebd6ba24ff895f5a2e450167fa5)
+            ;
+
+            
+        
+    
+        var marker_40ccaa7f500d450fbdda110d401824b4 = L.marker(
+            [42.333545, -82.097825],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_1a44fe65a2044b24a7d61fa2dbc8267e);
+        
+    
+
+                var icon_2feb004e5797426fa4d35f71743b0f80 = L.AwesomeMarkers.icon({
+                    icon: 'bus',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_40ccaa7f500d450fbdda110d401824b4.setIcon(icon_2feb004e5797426fa4d35f71743b0f80);
+            
+    
+            var popup_3c653874dc254adbb3e1b4968912b7ce = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3cecb26c4ad14aa0a0b4a6484a7f0dfb = $(`<div id="html_3cecb26c4ad14aa0a0b4a6484a7f0dfb" style="width: 100.0%; height: 100.0%;">Charing Cross</div>`)[0];
+                popup_3c653874dc254adbb3e1b4968912b7ce.setContent(html_3cecb26c4ad14aa0a0b4a6484a7f0dfb);
+            
+
+            marker_40ccaa7f500d450fbdda110d401824b4.bindPopup(popup_3c653874dc254adbb3e1b4968912b7ce)
+            ;
+
+            
+        
+    
+        var marker_4fada0f0d2fc40b8849d1be02f1039db = L.marker(
+            [42.27949, -82.03172],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_1a44fe65a2044b24a7d61fa2dbc8267e);
+        
+    
+
+                var icon_4d5b61451e0c4b1daa49c23bfd168257 = L.AwesomeMarkers.icon({
+                    icon: 'bus',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4fada0f0d2fc40b8849d1be02f1039db.setIcon(icon_4d5b61451e0c4b1daa49c23bfd168257);
+            
+    
+            var popup_09b55f9e5d1644f3a05ce9e91deccc0f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_dfe11e88458545bcbb53f51ce92d3671 = $(`<div id="html_dfe11e88458545bcbb53f51ce92d3671" style="width: 100.0%; height: 100.0%;">Cedar Springs</div>`)[0];
+                popup_09b55f9e5d1644f3a05ce9e91deccc0f.setContent(html_dfe11e88458545bcbb53f51ce92d3671);
+            
+
+            marker_4fada0f0d2fc40b8849d1be02f1039db.bindPopup(popup_09b55f9e5d1644f3a05ce9e91deccc0f)
+            ;
+
+            
+        
+    
+        var marker_522b4684c6ad4dc1b70533d3bb966cab = L.marker(
+            [42.24547, -82.10288],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_1a44fe65a2044b24a7d61fa2dbc8267e);
+        
+    
+
+                var icon_5f71c381b2f64d2a901146cd8595b908 = L.AwesomeMarkers.icon({
+                    icon: 'bus',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_522b4684c6ad4dc1b70533d3bb966cab.setIcon(icon_5f71c381b2f64d2a901146cd8595b908);
+            
+    
+            var popup_077a1a23ec9d48c78dad9a17e89df52a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_903c79ecd5e84ef1836cc084b8c8b984 = $(`<div id="html_903c79ecd5e84ef1836cc084b8c8b984" style="width: 100.0%; height: 100.0%;">Dealtown</div>`)[0];
+                popup_077a1a23ec9d48c78dad9a17e89df52a.setContent(html_903c79ecd5e84ef1836cc084b8c8b984);
+            
+
+            marker_522b4684c6ad4dc1b70533d3bb966cab.bindPopup(popup_077a1a23ec9d48c78dad9a17e89df52a)
+            ;
+
+            
+        
+    
+        var marker_ec7b909f289f4b9bbf221cd50034b112 = L.marker(
+            [42.27383, -82.18133],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_1a44fe65a2044b24a7d61fa2dbc8267e);
+        
+    
+
+                var icon_683ae22de3a54fdaae848031c20363ea = L.AwesomeMarkers.icon({
+                    icon: 'bus',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ec7b909f289f4b9bbf221cd50034b112.setIcon(icon_683ae22de3a54fdaae848031c20363ea);
+            
+    
+            var popup_09bd160c225f408db47abf92c5e5debe = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b410abecc3634551bbe9bd98ddcf38a3 = $(`<div id="html_b410abecc3634551bbe9bd98ddcf38a3" style="width: 100.0%; height: 100.0%;">South Buxton</div>`)[0];
+                popup_09bd160c225f408db47abf92c5e5debe.setContent(html_b410abecc3634551bbe9bd98ddcf38a3);
+            
+
+            marker_ec7b909f289f4b9bbf221cd50034b112.bindPopup(popup_09bd160c225f408db47abf92c5e5debe)
+            ;
+
+            
+        
+    
+        var marker_d28d9481fc9a432fa2b872289e260f51 = L.marker(
+            [42.30518, -82.21993],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_1a44fe65a2044b24a7d61fa2dbc8267e);
+        
+    
+
+                var icon_d9b94c6f87e3401681055909a787c128 = L.AwesomeMarkers.icon({
+                    icon: 'bus',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d28d9481fc9a432fa2b872289e260f51.setIcon(icon_d9b94c6f87e3401681055909a787c128);
+            
+    
+            var popup_9d0e9b747b0344c8a21d7ca1a693720c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8fcad26a093045ae9a62586efe739e91 = $(`<div id="html_8fcad26a093045ae9a62586efe739e91" style="width: 100.0%; height: 100.0%;">North Buxton</div>`)[0];
+                popup_9d0e9b747b0344c8a21d7ca1a693720c.setContent(html_8fcad26a093045ae9a62586efe739e91);
+            
+
+            marker_d28d9481fc9a432fa2b872289e260f51.bindPopup(popup_9d0e9b747b0344c8a21d7ca1a693720c)
+            ;
+
+            
+        
+    
+        var marker_c545651c0a124bafa2296e4487968a01 = L.marker(
+            [42.24096, -82.23278],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_1a44fe65a2044b24a7d61fa2dbc8267e);
+        
+    
+
+                var icon_43268038eb1a404da54c51b09de2b02e = L.AwesomeMarkers.icon({
+                    icon: 'bus',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c545651c0a124bafa2296e4487968a01.setIcon(icon_43268038eb1a404da54c51b09de2b02e);
+            
+    
+            var popup_bcdff09c11794201bf0ab2ab4112ab6a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_40237987e6a544e9874b562e8c5b01e1 = $(`<div id="html_40237987e6a544e9874b562e8c5b01e1" style="width: 100.0%; height: 100.0%;">Merlin</div>`)[0];
+                popup_bcdff09c11794201bf0ab2ab4112ab6a.setContent(html_40237987e6a544e9874b562e8c5b01e1);
+            
+
+            marker_c545651c0a124bafa2296e4487968a01.bindPopup(popup_bcdff09c11794201bf0ab2ab4112ab6a)
+            ;
+
+            
+        
+    
+        var marker_626da659d33a460aa65ea2e17eb580b2 = L.marker(
+            [42.314883, -82.074444],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_1a44fe65a2044b24a7d61fa2dbc8267e);
+        
+    
+
+                var icon_0348ae66b4cc4a918dd2b520791db956 = L.AwesomeMarkers.icon({
+                    icon: 'bus',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_626da659d33a460aa65ea2e17eb580b2.setIcon(icon_0348ae66b4cc4a918dd2b520791db956);
+            
+    
+            var popup_ee64a273229542fb8728c33c605fa797 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_515b75b91bb24638a4ab0ded5d4cba1e = $(`<div id="html_515b75b91bb24638a4ab0ded5d4cba1e" style="width: 100.0%; height: 100.0%;">Chatham-Kent Municipal Airport</div>`)[0];
+                popup_ee64a273229542fb8728c33c605fa797.setContent(html_515b75b91bb24638a4ab0ded5d4cba1e);
+            
+
+            marker_626da659d33a460aa65ea2e17eb580b2.bindPopup(popup_ee64a273229542fb8728c33c605fa797)
+            ;
+
+            
+        
+    
+        var marker_565d9496641b40a393f4f08efedf9f29 = L.marker(
+            [42.263298, -82.436767],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_1a44fe65a2044b24a7d61fa2dbc8267e);
+        
+    
+
+                var icon_5f0d5526e1d84f1fa950bb7132325a43 = L.AwesomeMarkers.icon({
+                    icon: 'bus',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_565d9496641b40a393f4f08efedf9f29.setIcon(icon_5f0d5526e1d84f1fa950bb7132325a43);
+            
+    
+            var popup_c176d74261e045e698a6e4a1f760ff84 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6480d7b9041747e79dbddcc625c10260 = $(`<div id="html_6480d7b9041747e79dbddcc625c10260" style="width: 100.0%; height: 100.0%;">Family Health Team</div>`)[0];
+                popup_c176d74261e045e698a6e4a1f760ff84.setContent(html_6480d7b9041747e79dbddcc625c10260);
+            
+
+            marker_565d9496641b40a393f4f08efedf9f29.bindPopup(popup_c176d74261e045e698a6e4a1f760ff84)
+            ;
+
+            
+        
+    
+        var marker_c1a2a16d0c714050ae1674fd0ee2120a = L.marker(
+            [42.27949, -82.03172],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_1a44fe65a2044b24a7d61fa2dbc8267e);
+        
+    
+
+                var icon_a44ae876942243fcaf5e1dd6a3e40c8a = L.AwesomeMarkers.icon({
+                    icon: 'bus',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c1a2a16d0c714050ae1674fd0ee2120a.setIcon(icon_a44ae876942243fcaf5e1dd6a3e40c8a);
+            
+    
+            var popup_9e6eccaf5dee4f1cbf32ab826cf610db = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_adee94c09c9044b38882e2ab0f7fadfe = $(`<div id="html_adee94c09c9044b38882e2ab0f7fadfe" style="width: 100.0%; height: 100.0%;">Cedar Springs</div>`)[0];
+                popup_9e6eccaf5dee4f1cbf32ab826cf610db.setContent(html_adee94c09c9044b38882e2ab0f7fadfe);
+            
+
+            marker_c1a2a16d0c714050ae1674fd0ee2120a.bindPopup(popup_9e6eccaf5dee4f1cbf32ab826cf610db)
+            ;
+
+            
+        
+    
+                var poly_line_e36a24694550465ba84d176cbd142af3 = L.polyline(
+                    [[42.40377, -82.18401], [42.40422, -82.19487], [42.333545, -82.097825], [42.314883, -82.074444], [42.24547, -82.10288], [42.27383, -82.18133], [42.30518, -82.21993], [42.24096, -82.23278], [42.25423, -82.43751], [42.25622, -82.43235], [42.263298, -82.436767], [42.26342, -82.429899], [42.399031, -82.194932]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}
+                    )
+                    .addTo(map_1a44fe65a2044b24a7d61fa2dbc8267e);
+            
+</script>
